@@ -16,7 +16,7 @@ ADD . /go-ethereum
 RUN cd /go-ethereum && go run build/ci.go install ./cmd/geth
 
 # Pull Geth into a second stage deploy alpine container
-FROM alpine:3.16.0
+FROM alpine:3.17
 
 ARG BSC_USER=bsc
 ARG BSC_USER_UID=1000
